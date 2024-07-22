@@ -12,6 +12,7 @@ This repository is for 2024 ARTC project, where we evaluate the performance of Y
 ```sh
 git clone https://github.com/Allan11231123/2024-ARTC-Yabloc.git
 cd 2024-ARTC-Yabloc
+git submodule update --init --recursive
 source /path/to/your/autoware/install/setup.bash
 rosdep install -y --from-path src --ignore-src --rosdistro $ROS_DISTRO
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
