@@ -3,11 +3,16 @@
 ## Description
 This repository is for 2024 ARTC project, where we evaluate the performance of Yabloc, a localization component from Autoware, in a standalone scheme.
 
+## Prerequisite
+- OS: Ubuntu 22.04
+- [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html)
+- [Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/source-installation/)
+
 ## Build
 ```sh
 git clone https://github.com/Allan11231123/2024-ARTC-Yabloc.git
 cd 2024-ARTC-Yabloc
-source /opt/ros/humber/setup.bash
+source /path/to/your/autoware/install/setup.bash
 rosdep install -y --from-path src --ignore-src --rosdistro $ROS_DISTRO
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
