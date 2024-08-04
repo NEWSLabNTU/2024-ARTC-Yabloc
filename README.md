@@ -6,14 +6,14 @@ This repository is for 2024 ARTC project, where we evaluate the performance of Y
 ## Prerequisite
 - OS: Ubuntu 22.04
 - [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html)
-- [Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/source-installation/)
+<!-- - [Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/source-installation/) -->
 
 ## Build
 ```sh
 git clone https://github.com/Allan11231123/2024-ARTC-Yabloc.git
 cd 2024-ARTC-Yabloc
 git submodule update --init --recursive
-source /path/to/your/autoware/install/setup.bash
+source /opt/ros/humble/setup.bash
 rosdep install -y --from-path src --ignore-src --rosdistro $ROS_DISTRO
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
