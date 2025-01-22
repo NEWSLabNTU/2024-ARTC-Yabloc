@@ -1,3 +1,16 @@
 [submodule "src/Yabloc"]
 	path = src/Yabloc
-	url = git@github.com:NEWSLabNTU/YabLoc.git
+	url = https://github.com/NEWSLabNTU/2024-ARTC-Yabloc.git
+[submodule "src/external/nuScene_converter"]
+	path = src/external/nuScene_converter
+	url = https://github.com/Frozn553/nuScene_converter.git
+[submodule "src/external/distance-verifier"]
+	path = src/external/distance-verifier
+	url = https://github.com/Allan11231123/distance-verifier.git
+[submodule "src/external/velocity-receiver"]
+	path = src/external/velocity-receiver
+	url = https://github.com/Allan11231123/velocity-receiver.git
+[submodule "src/carla_ros"]
+	path = src/carla_ros
+	url = https://github.com/gezp/carla_ros.git
+	branch = carla-0.9.14-ubuntu-22.04
