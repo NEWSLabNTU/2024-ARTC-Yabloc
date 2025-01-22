@@ -1,9 +1,3 @@
 [submodule "src/Yabloc"]
 	path = src/Yabloc
 	url = git@github.com:NEWSLabNTU/YabLoc.git
-[submodule "src/distance-verifier"]
-	path = src/distance-verifier
-	url = git@github.com:Allan11231123/distance-verifier.git
-[submodule "src/nuScenes_converter"]
-	path = src/nuScenes_converter
-	url = https://github.com/Frozn553/nuScenes_converter.git
