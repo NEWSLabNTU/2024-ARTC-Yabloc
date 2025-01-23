@@ -1,6 +1,6 @@
 [submodule "src/Yabloc"]
 	path = src/Yabloc
-	url = https://github.com/NEWSLabNTU/2024-ARTC-Yabloc.git
+	url = https://github.com/NEWSLabNTU/YabLoc.git
 [submodule "src/external/nuScene_converter"]
 	path = src/external/nuScene_converter
 	url = https://github.com/Frozn553/nuScene_converter.git
