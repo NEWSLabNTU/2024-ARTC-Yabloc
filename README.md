@@ -10,7 +10,7 @@ This repository is for 2024 ARTC project, where we evaluate the performance of Y
 
 ## Build
 ```sh
-git clone https://github.com/Allan11231123/2024-ARTC-Yabloc.git
+git clone https://github.com/NEWSLabNTU/2024-ARTC-Yabloc
 cd 2024-ARTC-Yabloc
 git submodule update --init --recursive
 source /opt/ros/humble/setup.bash
