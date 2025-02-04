@@ -13,4 +13,4 @@
 [submodule "src/carla_ros"]
 	path = src/carla_ros
 	url = https://github.com/NEWSLabNTU/carla_ros.git
-	branch = carla-0.9.14-ubuntu-22.04
+	branch = 2024_artc
