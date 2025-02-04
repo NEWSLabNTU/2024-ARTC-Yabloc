@@ -12,5 +12,5 @@
 	url = https://github.com/Allan11231123/velocity-receiver.git
 [submodule "src/carla_ros"]
 	path = src/carla_ros
-	url = https://github.com/gezp/carla_ros.git
+	url = https://github.com/NEWSLabNTU/carla_ros.git
 	branch = carla-0.9.14-ubuntu-22.04
