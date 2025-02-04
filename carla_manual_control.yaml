@@ -1,0 +1,16 @@
+launch:
+- include:
+    file: "$(find-pkg-share carla_ros_bridge)/carla_ros_bridge_with_example_ego_vehicle.launch.py"
+    arg:
+    -
+      name: timeout
+      value: '100'
+    -
+      name: town
+      value: ''
+    -
+      name: port
+      value: '2000'
+    -
+      name: host
+      value: 'localhost'
