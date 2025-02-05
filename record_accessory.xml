@@ -1,9 +1,9 @@
 <launch>
   <!-- If initialpose_yaml_path is "", then velocity_receiver would take the first message of /carla/ego_vehicle/odometry to be initialpose -->
   <!-- <arg name="initialpose_yaml_path" default="" description="Specify the path to initialpose yaml setting file."/> -->
-  <arg name="initialpose_yaml_path" default="$(find-pkg-share velocity_receiver)/initialpose.yaml" description="Specify the path to initialpose yaml setting file."/>
-  <arg name="tf_static_path" default="$(find-pkg-share velocity_receiver)/tf_static.yaml" description="Specify the path to tf_static yaml setting file."/>
-  <arg name="groundtruth_dir" default="./output" description="Specify the path to store the groundtruth csv file."/>
+  <arg name="initialpose_yaml_path" default="$(find-pkg-share velocity_receiver)/config/initialpose.yaml" description="Specify the path to initialpose yaml setting file."/>
+  <arg name="tf_static_path" default="$(find-pkg-share velocity_receiver)/config/tf_static.yaml" description="Specify the path to tf_static yaml setting file."/>
+  <arg name="groundtruth_dir" default="./data" description="Specify the path to store the groundtruth csv file."/>
 
   <node pkg="velocity_receiver" name="velocity_receiver" exec="velocity_receiver">
     <param name="initialpose_yaml_path" value="$(var initialpose_yaml_path)"/>
