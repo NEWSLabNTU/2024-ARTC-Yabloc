@@ -21,10 +21,11 @@ build:
 
 simple_record:
 	source ./install/setup.bash && \
-	ros2 launch ./launch/carla_manual_control.yaml &&\
+	ros2 launch ./launch/carla_manual_control.yaml && \
 	ros2 launch ./launch/record_accessory.xml
 
 simple_eval:
 	source ./install/setup.bash && \
 	ros2 launch ./launch/map_load.xml && \
+	ros2 launch ./launch/distance_verify.launch.xml && \
 	ros2 launch yabloc_launch sample.launch.xml
