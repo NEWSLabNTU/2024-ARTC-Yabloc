@@ -1,0 +1,11 @@
+<launch>
+    <arg name="groundtruth_path" default="./data/groundtruth.csv" description="Specify the groundtruth csv file for the recorded bag."/>
+    <arg name="errorfile_dir" default="./data" description="Specify the directory you want to put your distance error result."/>
+    <arg name="errorfile_filename" default="error.csv" description="Specify the csv file name for distance error result."/>
+
+    <node pkg="distance_verifier" name="distance_verifier" exec="distance_verifier">
+        <param name="groundtruth_path" value="$(var groundtruth_path)"/>
+        <param name="errorfile_dir" value="$(var errorfile_dir)"/>
+        <param name="errorfile_filename" value="$(var errorfile_filename)"/>
+    </node>
+</launch>
