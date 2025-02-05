@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-.PHONY: default prepare build
+.PHONY: default prepare build simple_record
 
 default:
 	@echo 'make prepare'
@@ -18,3 +18,7 @@ build:
 	colcon build \
 		--symlink-install \
 		--cmake-args -DCMAKE_BUILD_TYPE=Release
+simple_record:
+	source ./install/setup.bash && \
+	ros2 launch ./launch/carla_manual_control.yaml &&\
+	ros2 launch ./launch/record_accessory.xml
