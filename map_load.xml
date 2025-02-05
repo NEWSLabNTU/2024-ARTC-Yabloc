@@ -1,0 +1,19 @@
+<launch>
+  <arg name="lanelet2_map_path" default="./map/lanelet2_map.osm" description="Specify the folder to lanelet2 map which need to be loaded."/>
+  <arg name="map_projector_info_path" default="./map/map_projector_info.yaml" description="Specify the folder to lanelet2 map which need to be loaded."/>
+
+  <node pkg="map_projection_loader" name="map_projection_loader" exec="map_projection_loader">
+    <param name="lanelet2_map_path" value="$(var lanelet2_map_path)"/>
+    <param name="map_projector_info_path" value="$(var map_projector_info_path)"/>
+  </node>
+
+  <node pkg="map_loader" name="lanelet2_map_loader" exec="lanelet2_map_loader">
+    <param name="lanelet2_map_path" value="$(var lanelet2_map_path)"/>
+    <remap from="/output/lanelet2_map" to="/map/vector_map"/>
+  </node>
+
+  <node pkg="map_loader" name="lanelet2_map_visualization" exec="lanelet2_map_visualization">
+    <remap from="/input/lanelet2_map" to="/map/vector_map"/>
+    <remap from="/output/lanelet2_map_marker" to="/map/vector_map_marker"/>
+  </node>
+</launch>
