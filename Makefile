@@ -7,6 +7,14 @@ default:
 	@echo
 	@echo 'make build'
 	@echo '    Build this project.'
+	@echo
+	@echo 'make simple_record'
+	@echo '    Run simple recording process under CARLA simulation.'
+	@echo '    NOTE: Make sure to activate CARLA server first.'
+	@echo
+	@echo 'make simple_eval'
+	@echo '    Run simple evaluation process.'
+	@echo '    NOTE: Remember to source your autoware workspace before running this command.'
 
 prepare:
 	source /opt/ros/humble/setup.bash && \
